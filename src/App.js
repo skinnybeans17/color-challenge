@@ -44,14 +44,14 @@ function App() {
   return (
     <div className="App">
       <div className='squares'>
-        <div style={{ backgroundColor: square1 }} className='Square 1' onClick={() => setClicked(square1)}/>
-        <div style={{ backgroundColor: square2 }} className='Square 2' onClick={() => setClicked(square2)}/>
-        <div style={{ backgroundColor: square3 }} className='Square 3' onClick={() => setClicked(square3)}/>
+        <div style={{ backgroundColor: square1 }} className='square 1' onClick={() => setClicked(square1)}/>
+        <div style={{ backgroundColor: square2 }} className='square 2' onClick={() => setClicked(square2)}/>
+        <div style={{ backgroundColor: square3 }} className='square 3' onClick={() => setClicked(square3)}/>
       </div>
       <div className='message'>
         <p>Click the swatch that matches: {guess}</p>
         <div>
-          <p>{isClick === guess ? "Yes, that's correct!" : isClick === false ? '' : "Sorry, that's incorrect."}</p>
+          <h3>{isClick === guess ? "Yes, that's correct!" : isClick === false ? '' : "Sorry, that's incorrect."}</h3>
         </div>
         <button onClick={() => GetRandomColors(square1, square2, square3)}>Play Again</button>
     </div>
